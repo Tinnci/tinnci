@@ -29,7 +29,3 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=tinnci&theme=radical" alt="streak stats"/>
 </p>
 
-
-<div style="background-color:#1e1e2f; padding:10px; border-radius:5px;">
-  <h1 align="center" style="color:#FFD700;">Welcome to my Profile</h1>
-</div>
