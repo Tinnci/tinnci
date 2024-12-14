@@ -53,15 +53,5 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=tinnci&theme=radical" alt="streak stats" onerror="this.src='https://via.placeholder.com/150?text=Streak+Stats+Unavailable';"/>
 </p>
 
-<style>
-  .subheading {
-    color: #4CAF50;
-  }
-
-  .section-title {
-    color: #FF5733;
-  }
-</style>
-
 </body>
 </html>
