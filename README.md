@@ -5,12 +5,6 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=tinnci" alt="tinnci" /></a> </p>
 
-<h3 align="left">🌟 Featured Projects</h3>
-<ul>
-  <li><a href="https://github.com/your-project-link">📂 Project Name</a>: A brief description of the project.</li>
-  <li><a href="https://github.com/your-project-link">📂 Another Project</a>: Another project with key features.</li>
-</ul>
-
 <h3 align="left" style="color:#FF5733;">🔥 Languages and Tools</h3>
 <h3 align="left">Languages</h3>
 <p align="left">
@@ -35,12 +29,6 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=tinnci&theme=radical" alt="streak stats"/>
 </p>
 
-<h3 align="left">Recent Activity</h3>
-<!--START_SECTION:activity-->
-1. 🎉 Opened a new issue in [example-repo](https://github.com/example-repo)
-2. 💪 Pushed a commit to [another-repo](https://github.com/another-repo)
-3. 🛠️ Fixed a bug in [yet-another-repo](https://github.com/yet-another-repo)
-<!--END_SECTION:activity-->
 
 <div style="background-color:#1e1e2f; padding:10px; border-radius:5px;">
   <h1 align="center" style="color:#FFD700;">Welcome to my Profile</h1>
