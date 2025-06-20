@@ -21,12 +21,6 @@
 
 <p align="left">
   <a href="mailto:luoyido@outlook.com">
-    <img align="center" src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" alt="email" height="30" width="30" />
+    <img align="center" src="https://www.vectorlogo.zone/logos/microsoft_outlook/microsoft_outlook-icon.svg" alt="email" height="30" width="30" />
   </a>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=tinnci&show_icons=true&theme=radical" alt="tinnci stats"/>
-  &nbsp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tinnci&theme=radical" alt="streak stats"/>
 </p>
