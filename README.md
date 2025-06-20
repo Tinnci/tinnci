@@ -10,7 +10,7 @@
 
 ### 🔥 Languages and Tools
 
-<p align="left">
+<p align="center">
     <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a>
     <a href="https://isocpp.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a>
     <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
@@ -19,7 +19,7 @@
 
 ### 📫 Connect with me
 
-<p align="left">
+<p align="center">
   <a href="mailto:luoyido@outlook.com">
     <img align="center" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/mail.svg" alt="email" height="30" width="30" />
   </a>
