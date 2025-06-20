@@ -21,6 +21,6 @@
 
 <p align="left">
   <a href="mailto:luoyido@outlook.com">
-    <img align="center" src="https://www.vectorlogo.zone/logos/microsoft_outlook/microsoft_outlook-icon.svg" alt="email" height="30" width="30" />
+    <img align="center" src="https://raw.githubusercontent.com/feathericons/feather/master/icons/mail.svg" alt="email" height="30" width="30" />
   </a>
 </p>
