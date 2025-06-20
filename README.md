@@ -5,9 +5,7 @@
 <h3 align="center">🌱 A passionate student from Shanghai, China 🌏</h3>
 
 <p align="center">
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=tinnci" alt="tinnci" />
-  </a>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tinnci&theme=radical" alt="Tinnci's GitHub stats" />
 </p>
 
 ### 🔥 Languages and Tools
