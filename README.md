@@ -48,5 +48,5 @@
 ### `03 // GITHUB ACTIVITY`
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tinnci&theme=radical" alt="Tinnci's GitHub stats" />
+  <img src="activity.svg" alt="Tinnci's GitHub Activity" />
 </p>
