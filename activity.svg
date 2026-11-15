@@ -3,74 +3,58 @@
     <style>
       .num { font: 900 34px 'Segoe UI', system-ui, -apple-system, sans-serif; fill: #111111; }
       .lbl { font: 800 11px 'Segoe UI', system-ui, -apple-system, sans-serif; fill: #111111; letter-spacing: 0.08em; }
-      .sub { font: 700 10px 'Consolas', 'Courier New', monospace; fill: #111111; opacity: 0.8; }
-      .hdr { font: 900 13px 'Consolas', 'Courier New', monospace; fill: #111111; letter-spacing: 0.06em; }
+      .sub { font: 700 10px 'Consolas', 'Courier New', monospace; fill: #111111; opacity: 0.85; }
       .lang { font: 800 12px 'Consolas', 'Courier New', monospace; fill: #111111; }
       .cnt { font: 800 12px 'Consolas', 'Courier New', monospace; fill: #111111; }
     </style>
   </defs>
 
-  <!-- Card 1: Public Repos (Yellow) -->
   <rect x="10" y="10" width="190" height="115" fill="#000000" />
   <rect x="4" y="4" width="190" height="115" fill="#FFD93D" stroke="#000000" stroke-width="3" />
   <text x="20" y="48" class="num">226</text>
   <text x="20" y="74" class="lbl">PUBLIC REPOS</text>
   <text x="20" y="96" class="sub">91 ORIGINAL // 135 FORKS</text>
 
-  <!-- Card 2: Stars (Coral) -->
   <rect x="218" y="10" width="190" height="115" fill="#000000" />
   <rect x="212" y="4" width="190" height="115" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
   <text x="228" y="48" class="num">79</text>
   <text x="228" y="74" class="lbl">TOTAL STARS</text>
   <text x="228" y="96" class="sub">OWNED REPOSITORIES</text>
 
-  <!-- Card 3: Followers (Mint) -->
   <rect x="10" y="143" width="190" height="115" fill="#000000" />
   <rect x="4" y="137" width="190" height="115" fill="#6BCB77" stroke="#000000" stroke-width="3" />
   <text x="20" y="181" class="num">16</text>
   <text x="20" y="207" class="lbl">FOLLOWERS</text>
   <text x="20" y="229" class="sub">113 FOLLOWING</text>
 
-  <!-- Card 4: Years (Blue) -->
   <rect x="218" y="143" width="190" height="115" fill="#000000" />
   <rect x="212" y="137" width="190" height="115" fill="#4D96FF" stroke="#000000" stroke-width="3" />
   <text x="228" y="181" class="num">10 YRS</text>
   <text x="228" y="207" class="lbl">ON GITHUB</text>
   <text x="228" y="229" class="sub">JOINED NOV 2016</text>
 
-  <!-- Card 5: Top Languages Bento (Right Panel) -->
   <rect x="428" y="10" width="402" height="248" fill="#000000" />
   <rect x="422" y="4" width="402" height="248" fill="#FAFAFA" stroke="#000000" stroke-width="3" />
   <rect x="422" y="4" width="402" height="38" fill="#111111" stroke="#000000" stroke-width="3" />
   <text x="438" y="28" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#FFD93D" letter-spacing="1">TOP LANGUAGES // OWN REPOS</text>
-
-  <!-- Row 1: Python (22) -->
   <text x="440" y="72" class="lang">PYTHON</text>
   <rect x="520" y="58" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
   <rect x="520" y="58" width="230" height="18" fill="#FFD93D" stroke="#000000" stroke-width="2" />
   <text x="766" y="72" class="cnt">22</text>
-
-  <!-- Row 2: Rust (12) -->
   <text x="440" y="110" class="lang">RUST</text>
   <rect x="520" y="96" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
   <rect x="520" y="96" width="125" height="18" fill="#FF6B6B" stroke="#000000" stroke-width="2" />
   <text x="766" y="110" class="cnt">12</text>
-
-  <!-- Row 3: C++ (6) -->
-  <text x="440" y="148" class="lang">C++</text>
+  <text x="440" y="148" class="lang">TYPESCRIP</text>
   <rect x="520" y="134" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
-  <rect x="520" y="134" width="63" height="18" fill="#4D96FF" stroke="#000000" stroke-width="2" />
+  <rect x="520" y="134" width="62" height="18" fill="#4D96FF" stroke="#000000" stroke-width="2" />
   <text x="766" y="148" class="cnt">6</text>
-
-  <!-- Row 4: Dart (6) -->
-  <text x="440" y="186" class="lang">DART</text>
+  <text x="440" y="186" class="lang">SHELL</text>
   <rect x="520" y="172" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
-  <rect x="520" y="172" width="63" height="18" fill="#6BCB77" stroke="#000000" stroke-width="2" />
+  <rect x="520" y="172" width="62" height="18" fill="#6BCB77" stroke="#000000" stroke-width="2" />
   <text x="766" y="186" class="cnt">6</text>
-
-  <!-- Row 5: Shell (6) -->
-  <text x="440" y="224" class="lang">SHELL</text>
+  <text x="440" y="224" class="lang">DART</text>
   <rect x="520" y="210" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
-  <rect x="520" y="210" width="63" height="18" fill="#111111" stroke="#000000" stroke-width="2" />
+  <rect x="520" y="210" width="62" height="18" fill="#111111" stroke="#000000" stroke-width="2" />
   <text x="766" y="224" class="cnt">6</text>
 </svg>

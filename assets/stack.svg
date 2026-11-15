@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="830" height="120" viewBox="0 0 830 120" role="img" aria-label="Tech Stack Bento">
+  <rect x="9" y="9" width="152" height="46" fill="#000000" />
+  <rect x="4" y="4" width="152" height="46" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+  <text x="80" y="32" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#111111" letter-spacing="1">RUST</text>
+  <rect x="175" y="9" width="152" height="46" fill="#000000" />
+  <rect x="170" y="4" width="152" height="46" fill="#4D96FF" stroke="#000000" stroke-width="3" />
+  <text x="246" y="32" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#111111" letter-spacing="1">TYPESCRIPT</text>
+  <rect x="341" y="9" width="152" height="46" fill="#000000" />
+  <rect x="336" y="4" width="152" height="46" fill="#6BCB77" stroke="#000000" stroke-width="3" />
+  <text x="412" y="32" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#111111" letter-spacing="1">GO</text>
+  <rect x="507" y="9" width="152" height="46" fill="#000000" />
+  <rect x="502" y="4" width="152" height="46" fill="#FFD93D" stroke="#000000" stroke-width="3" />
+  <text x="578" y="32" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#111111" letter-spacing="1">PYTHON</text>
+  <rect x="673" y="9" width="152" height="46" fill="#000000" />
+  <rect x="668" y="4" width="152" height="46" fill="#4D96FF" stroke="#000000" stroke-width="3" />
+  <text x="744" y="32" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#111111" letter-spacing="1">C++</text>
+  <rect x="9" y="69" width="152" height="46" fill="#000000" />
+  <rect x="4" y="64" width="152" height="46" fill="#FFD93D" stroke="#000000" stroke-width="3" />
+  <text x="80" y="92" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#111111" letter-spacing="1">KOTLIN</text>
+  <rect x="175" y="69" width="152" height="46" fill="#000000" />
+  <rect x="170" y="64" width="152" height="46" fill="#4D96FF" stroke="#000000" stroke-width="3" />
+  <text x="246" y="92" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#111111" letter-spacing="1">FLUTTER</text>
+  <rect x="341" y="69" width="152" height="46" fill="#000000" />
+  <rect x="336" y="64" width="152" height="46" fill="#6BCB77" stroke="#000000" stroke-width="3" />
+  <text x="412" y="92" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#111111" letter-spacing="1">REACT</text>
+  <rect x="507" y="69" width="152" height="46" fill="#000000" />
+  <rect x="502" y="64" width="152" height="46" fill="#4D96FF" stroke="#000000" stroke-width="3" />
+  <text x="578" y="92" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#111111" letter-spacing="1">DOCKER</text>
+  <rect x="673" y="69" width="152" height="46" fill="#000000" />
+  <rect x="668" y="64" width="152" height="46" fill="#FFD93D" stroke="#000000" stroke-width="3" />
+  <text x="744" y="92" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#111111" letter-spacing="1">LINUX</text>
+</svg>
