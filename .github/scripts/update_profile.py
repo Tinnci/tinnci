@@ -218,7 +218,24 @@ def render_project_card_svg(name: str, badge: str, color: str, desc: str, stars:
     return f"assets/project-{slug}.svg"
 
 
-def render_readme(project_cards):
+def render_section_title_svg(slug: str, num: str, title: str, color: str, tag: str):
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="840" height="52" viewBox="0 0 840 52" role="img" aria-label="{escape(num)} {escape(title)}">
+  <rect x="8" y="8" width="826" height="40" fill="#000000" />
+  <rect x="2" y="2" width="826" height="40" fill="#FAFAFA" stroke="#000000" stroke-width="3" />
+  <rect x="2" y="2" width="64" height="40" fill="{color}" stroke="#000000" stroke-width="3" />
+  <text x="34" y="28" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="16" fill="#111111">{escape(num)}</text>
+  <text x="82" y="28" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="16" fill="#111111" letter-spacing="1.2">{escape(title)}</text>
+  <rect x="698" y="9" width="116" height="26" fill="#111111" />
+  <text x="756" y="26" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="800" font-size="11" fill="{color}" letter-spacing="0.8">{escape(tag)}</text>
+</svg>
+"""
+    path = os.path.join(ASSETS_DIR, f"title-{slug}.svg")
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(svg)
+    return f"assets/title-{slug}.svg"
+
+
+def render_readme(project_cards, titles):
     rows = []
     for i in range(0, len(project_cards), 2):
         left_name, left_path = project_cards[i]
@@ -245,25 +262,25 @@ def render_readme(project_cards):
   </a>
 </p>
 
----
-
-### `01 // FEATURED PROJECTS`
+<p align="center">
+  <img src="{titles['projects']}" alt="01 // FEATURED PROJECTS" />
+</p>
 
 <table>
 {chr(10).join(rows)}
 </table>
 
----
-
-### `02 // TECH STACK`
+<p align="center">
+  <img src="{titles['stack']}" alt="02 // TECH STACK" />
+</p>
 
 <p align="center">
   <img src="assets/stack.svg" alt="Tech Stack Bento" />
 </p>
 
----
-
-### `03 // GITHUB ACTIVITY`
+<p align="center">
+  <img src="{titles['activity']}" alt="03 // GITHUB ACTIVITY" />
+</p>
 
 <p align="center">
   <img src="activity.svg" alt="Tinnci's GitHub Activity" />
@@ -277,12 +294,17 @@ def main():
     stats = fetch_github_stats()
     render_activity_svg(stats)
     render_stack_svg()
+    titles = {
+        "projects": render_section_title_svg("projects", "01", "FEATURED PROJECTS", "#FF6B6B", f"{len(FEATURED_REPOS)} REPOS"),
+        "stack": render_section_title_svg("stack", "02", "TECH STACK", "#FFD93D", f"{len(TECH_STACK)} TOOLS"),
+        "activity": render_section_title_svg("activity", "03", "GITHUB ACTIVITY", "#6BCB77", "LIVE STATS"),
+    }
     project_cards = []
     for name, badge, color, desc in FEATURED_REPOS:
         stars = stats["repo_stars"].get(name, 0)
         svg_path = render_project_card_svg(name, badge, color, desc, stars)
         project_cards.append((name, svg_path))
-    render_readme(project_cards)
+    render_readme(project_cards, titles)
     print(f"Updated profile SVGs & README.md ({stats['public_repos']} repos, {stats['stars']} stars)")
 
 

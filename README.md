@@ -13,9 +13,9 @@
   </a>
 </p>
 
----
-
-### `01 // FEATURED PROJECTS`
+<p align="center">
+  <img src="assets/title-projects.svg" alt="01 // FEATURED PROJECTS" />
+</p>
 
 <table>
   <tr>
@@ -32,17 +32,17 @@
   </tr>
 </table>
 
----
-
-### `02 // TECH STACK`
+<p align="center">
+  <img src="assets/title-stack.svg" alt="02 // TECH STACK" />
+</p>
 
 <p align="center">
   <img src="assets/stack.svg" alt="Tech Stack Bento" />
 </p>
 
----
-
-### `03 // GITHUB ACTIVITY`
+<p align="center">
+  <img src="assets/title-activity.svg" alt="03 // GITHUB ACTIVITY" />
+</p>
 
 <p align="center">
   <img src="activity.svg" alt="Tinnci's GitHub Activity" />
