@@ -116,11 +116,15 @@ def render_header_svg():
   <rect x="4" y="4" width="822" height="136" fill="#FFD93D" stroke="#000000" stroke-width="4" />
 
   <!-- Top-right corner accent tag -->
-  <rect x="650" y="16" width="160" height="28" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
-  <circle cx="668" cy="30" r="5" fill="#111111">
-    <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite" />
-  </circle>
-  <text x="738" y="34" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="11" fill="#111111" letter-spacing="1">ONLINE // DEV</text>
+  <rect x="654" y="20" width="160" height="28" fill="#000000" />
+  <g>
+    <rect x="650" y="16" width="160" height="28" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+    <circle cx="668" cy="30" r="5" fill="#111111">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite" />
+    </circle>
+    <text x="738" y="34" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="11" fill="#111111" letter-spacing="1">ONLINE // DEV</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;-1.5 -1.5;0 0;0 0" keyTimes="0;0.08;0.16;1" dur="5s" repeatCount="indefinite" />
+  </g>
 
   <!-- Main Headline -->
   <text x="28" y="76" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-weight="900" font-size="52" fill="#111111" letter-spacing="-1.5">HI, I'M TINNCI</text>
@@ -174,28 +178,52 @@ def render_activity_svg(stats):
   </defs>
 
   <rect x="10" y="10" width="190" height="115" fill="#000000" />
-  <rect x="4" y="4" width="190" height="115" fill="#FFD93D" stroke="#000000" stroke-width="3" />
-  <text x="20" y="48" class="num">{stats['public_repos']}</text>
-  <text x="20" y="74" class="lbl">PUBLIC REPOS</text>
-  <text x="20" y="96" class="sub">{stats['own_repos']} ORIGINAL // {stats['forks']} FORKS</text>
+  <g>
+    <rect x="4" y="4" width="190" height="115" fill="#FFD93D" stroke="#000000" stroke-width="3" />
+    <rect x="174" y="14" width="8" height="8" fill="#111111">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="0s" repeatCount="indefinite" />
+    </rect>
+    <text x="20" y="48" class="num">{stats['public_repos']}</text>
+    <text x="20" y="74" class="lbl">PUBLIC REPOS</text>
+    <text x="20" y="96" class="sub">{stats['own_repos']} ORIGINAL // {stats['forks']} FORKS</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;-1.5 -1.5;0 0;0 0" keyTimes="0;0.08;0.16;1" dur="6s" begin="0s" repeatCount="indefinite" />
+  </g>
 
   <rect x="218" y="10" width="190" height="115" fill="#000000" />
-  <rect x="212" y="4" width="190" height="115" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
-  <text x="228" y="48" class="num">{stats['stars']}</text>
-  <text x="228" y="74" class="lbl">TOTAL STARS</text>
-  <text x="228" y="96" class="sub">OWNED REPOSITORIES</text>
+  <g>
+    <rect x="212" y="4" width="190" height="115" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+    <rect x="382" y="14" width="8" height="8" fill="#111111">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="0.6s" repeatCount="indefinite" />
+    </rect>
+    <text x="228" y="48" class="num">{stats['stars']}</text>
+    <text x="228" y="74" class="lbl">TOTAL STARS</text>
+    <text x="228" y="96" class="sub">OWNED REPOSITORIES</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;-1.5 -1.5;0 0;0 0" keyTimes="0;0.08;0.16;1" dur="6s" begin="1.5s" repeatCount="indefinite" />
+  </g>
 
   <rect x="10" y="143" width="190" height="115" fill="#000000" />
-  <rect x="4" y="137" width="190" height="115" fill="#6BCB77" stroke="#000000" stroke-width="3" />
-  <text x="20" y="181" class="num">{stats['followers']}</text>
-  <text x="20" y="207" class="lbl">FOLLOWERS</text>
-  <text x="20" y="229" class="sub">{stats['following']} FOLLOWING</text>
+  <g>
+    <rect x="4" y="137" width="190" height="115" fill="#6BCB77" stroke="#000000" stroke-width="3" />
+    <rect x="174" y="147" width="8" height="8" fill="#111111">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="1.2s" repeatCount="indefinite" />
+    </rect>
+    <text x="20" y="181" class="num">{stats['followers']}</text>
+    <text x="20" y="207" class="lbl">FOLLOWERS</text>
+    <text x="20" y="229" class="sub">{stats['following']} FOLLOWING</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;-1.5 -1.5;0 0;0 0" keyTimes="0;0.08;0.16;1" dur="6s" begin="3s" repeatCount="indefinite" />
+  </g>
 
   <rect x="218" y="143" width="190" height="115" fill="#000000" />
-  <rect x="212" y="137" width="190" height="115" fill="#4D96FF" stroke="#000000" stroke-width="3" />
-  <text x="228" y="181" class="num">{stats['years']} YRS</text>
-  <text x="228" y="207" class="lbl">ON GITHUB</text>
-  <text x="228" y="229" class="sub">JOINED {stats['joined']}</text>
+  <g>
+    <rect x="212" y="137" width="190" height="115" fill="#4D96FF" stroke="#000000" stroke-width="3" />
+    <rect x="382" y="147" width="8" height="8" fill="#111111">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="1.8s" repeatCount="indefinite" />
+    </rect>
+    <text x="228" y="181" class="num">{stats['years']} YRS</text>
+    <text x="228" y="207" class="lbl">ON GITHUB</text>
+    <text x="228" y="229" class="sub">JOINED {stats['joined']}</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;-1.5 -1.5;0 0;0 0" keyTimes="0;0.08;0.16;1" dur="6s" begin="4.5s" repeatCount="indefinite" />
+  </g>
 
   <rect x="428" y="10" width="402" height="248" fill="#000000" />
   <rect x="422" y="4" width="402" height="248" fill="#FAFAFA" stroke="#000000" stroke-width="3" />
@@ -223,8 +251,11 @@ def render_stack_svg():
         y = start_y + r * (box_h + gap_y)
         items.append(
             f'  <rect x="{x + 5}" y="{y + 5}" width="{box_w}" height="{box_h}" fill="#000000" />\n'
-            f'  <rect x="{x}" y="{y}" width="{box_w}" height="{box_h}" fill="{color}" stroke="#000000" stroke-width="3" />\n'
-            f'  <text x="{x + box_w // 2}" y="{y + 28}" text-anchor="middle" font-family="\'Consolas\', \'Courier New\', monospace" font-weight="900" font-size="13" fill="#111111" letter-spacing="1">{escape(name)}</text>'
+            f'  <g>\n'
+            f'    <rect x="{x}" y="{y}" width="{box_w}" height="{box_h}" fill="{color}" stroke="#000000" stroke-width="3" />\n'
+            f'    <text x="{x + box_w // 2}" y="{y + 28}" text-anchor="middle" font-family="\'Consolas\', \'Courier New\', monospace" font-weight="900" font-size="13" fill="#111111" letter-spacing="1">{escape(name)}</text>\n'
+            f'    <animateTransform attributeName="transform" type="translate" values="0 0;-1.5 -1.5;0 0;0 0" keyTimes="0;0.06;0.12;1" dur="6s" begin="{i * 0.45:.2f}s" repeatCount="indefinite" />\n'
+            f'  </g>'
         )
 
     total_w = start_x + cols * box_w + (cols - 1) * gap_x + 10
@@ -238,7 +269,7 @@ def render_stack_svg():
         f.write(svg)
 
 
-def render_project_card_svg(name: str, badge: str, color: str, desc: str, stars: int):
+def render_project_card_svg(name: str, badge: str, color: str, desc: str, stars: int, idx: int = 0):
     lines = wrap_lines(desc, max_chars=44, max_lines=2)
     line1 = escape(lines[0]) if len(lines) > 0 else ""
     line2 = escape(lines[1]) if len(lines) > 1 else ""
@@ -246,16 +277,22 @@ def render_project_card_svg(name: str, badge: str, color: str, desc: str, stars:
     slug = name.lower().replace(".", "-")
 
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="408" height="126" viewBox="0 0 408 126" role="img" aria-label="{escape(name)}">
-  <rect x="8" y="8" width="394" height="112" fill="#000000" />
-  <rect x="2" y="2" width="394" height="112" fill="#FAFAFA" stroke="#000000" stroke-width="3" />
-  <rect x="2" y="2" width="394" height="36" fill="{color}" stroke="#000000" stroke-width="3" />
-  <text x="16" y="25" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="16" fill="#111111">{escape(name)}</text>
-  <rect x="274" y="9" width="110" height="22" fill="#111111" />
-  <text x="329" y="24" text-anchor="middle" font-family="'Consolas', monospace" font-weight="800" font-size="10" fill="#FAFAFA">{escape(badge)}</text>
-  <text x="16" y="62" font-family="'Segoe UI', system-ui, sans-serif" font-weight="600" font-size="12.5" fill="#111111">{line1}</text>
-  <text x="16" y="81" font-family="'Segoe UI', system-ui, sans-serif" font-weight="600" font-size="12.5" fill="#111111">{line2}</text>
-  <text x="16" y="102" font-family="'Consolas', monospace" font-weight="800" font-size="10.5" fill="#555555">GITHUB.COM/{USERNAME.upper()}/{escape(name.upper())}</text>
-  <text x="382" y="102" text-anchor="end" font-family="'Consolas', monospace" font-weight="900" font-size="11" fill="#111111">{escape(star_text)}</text>
+  <rect x="10" y="10" width="392" height="110" fill="#000000" />
+  <g>
+    <rect x="4" y="4" width="392" height="110" fill="#FAFAFA" stroke="#000000" stroke-width="3" />
+    <rect x="4" y="4" width="392" height="36" fill="{color}" stroke="#000000" stroke-width="3" />
+    <text x="18" y="27" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="16" fill="#111111">{escape(name)}</text>
+    <rect x="274" y="11" width="110" height="22" fill="#111111" />
+    <text x="329" y="26" text-anchor="middle" font-family="'Consolas', monospace" font-weight="800" font-size="10" fill="#FAFAFA">{escape(badge)}</text>
+    <text x="18" y="64" font-family="'Segoe UI', system-ui, sans-serif" font-weight="600" font-size="12.5" fill="#111111">{line1}</text>
+    <text x="18" y="83" font-family="'Segoe UI', system-ui, sans-serif" font-weight="600" font-size="12.5" fill="#111111">{line2}</text>
+    <text x="18" y="102" font-family="'Consolas', monospace" font-weight="800" font-size="10.5" fill="#555555">GITHUB.COM/{USERNAME.upper()}/{escape(name.upper())}</text>
+    <text x="370" y="102" text-anchor="end" font-family="'Consolas', monospace" font-weight="900" font-size="11" fill="#111111">{escape(star_text)}</text>
+    <rect x="376" y="94" width="7" height="7" fill="{color}" stroke="#000000" stroke-width="1.5">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="{idx * 0.4:.1f}s" repeatCount="indefinite" />
+    </rect>
+    <animateTransform attributeName="transform" type="translate" values="0 0;-1.5 -1.5;0 0;0 0" keyTimes="0;0.06;0.12;1" dur="7s" begin="{idx * 0.9:.1f}s" repeatCount="indefinite" />
+  </g>
 </svg>
 """
     path = os.path.join(ASSETS_DIR, f"project-{slug}.svg")
@@ -264,15 +301,21 @@ def render_project_card_svg(name: str, badge: str, color: str, desc: str, stars:
     return f"assets/project-{slug}.svg"
 
 
-def render_section_title_svg(slug: str, num: str, title: str, color: str, tag: str):
+def render_section_title_svg(slug: str, num: str, title: str, color: str, tag: str, idx: int = 0):
     svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="840" height="52" viewBox="0 0 840 52" role="img" aria-label="{escape(num)} {escape(title)}">
-  <rect x="8" y="8" width="826" height="40" fill="#000000" />
-  <rect x="2" y="2" width="826" height="40" fill="#FAFAFA" stroke="#000000" stroke-width="3" />
-  <rect x="2" y="2" width="64" height="40" fill="{color}" stroke="#000000" stroke-width="3" />
-  <text x="34" y="28" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="16" fill="#111111">{escape(num)}</text>
-  <text x="82" y="28" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="16" fill="#111111" letter-spacing="1.2">{escape(title)}</text>
-  <rect x="698" y="9" width="116" height="26" fill="#111111" />
-  <text x="756" y="26" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="800" font-size="11" fill="{color}" letter-spacing="0.8">{escape(tag)}</text>
+  <rect x="10" y="10" width="824" height="38" fill="#000000" />
+  <g>
+    <rect x="4" y="4" width="824" height="38" fill="#FAFAFA" stroke="#000000" stroke-width="3" />
+    <rect x="4" y="4" width="64" height="38" fill="{color}" stroke="#000000" stroke-width="3" />
+    <text x="36" y="29" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="16" fill="#111111">{escape(num)}</text>
+    <text x="84" y="29" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="16" fill="#111111" letter-spacing="1.2">{escape(title)}</text>
+    <rect x="698" y="10" width="118" height="26" fill="#111111" />
+    <rect x="707" y="20" width="6" height="6" fill="{color}">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.2s" begin="{idx * 0.5:.1f}s" repeatCount="indefinite" />
+    </rect>
+    <text x="763" y="27" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="800" font-size="11" fill="{color}" letter-spacing="0.8">{escape(tag)}</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;-1.5 -1.5;0 0;0 0" keyTimes="0;0.05;0.10;1" dur="8s" begin="{idx * 1.2:.1f}s" repeatCount="indefinite" />
+  </g>
 </svg>
 """
     path = os.path.join(ASSETS_DIR, f"title-{slug}.svg")
@@ -342,14 +385,14 @@ def main():
     render_activity_svg(stats)
     render_stack_svg()
     titles = {
-        "projects": render_section_title_svg("projects", "01", "FEATURED PROJECTS", "#FF6B6B", f"{len(FEATURED_REPOS)} REPOS"),
-        "stack": render_section_title_svg("stack", "02", "TECH STACK", "#FFD93D", f"{len(TECH_STACK)} TOOLS"),
-        "activity": render_section_title_svg("activity", "03", "GITHUB ACTIVITY", "#6BCB77", "LIVE STATS"),
+        "projects": render_section_title_svg("projects", "01", "FEATURED PROJECTS", "#FF6B6B", f"{len(FEATURED_REPOS)} REPOS", 0),
+        "stack": render_section_title_svg("stack", "02", "TECH STACK", "#FFD93D", f"{len(TECH_STACK)} TOOLS", 1),
+        "activity": render_section_title_svg("activity", "03", "GITHUB ACTIVITY", "#6BCB77", "LIVE STATS", 2),
     }
     project_cards = []
-    for name, badge, color, desc in FEATURED_REPOS:
+    for idx, (name, badge, color, desc) in enumerate(FEATURED_REPOS):
         stars = stats["repo_stars"].get(name, 0)
-        svg_path = render_project_card_svg(name, badge, color, desc, stars)
+        svg_path = render_project_card_svg(name, badge, color, desc, stars, idx)
         project_cards.append((name, svg_path))
     render_readme(project_cards, titles)
     print(f"Updated profile SVGs & README.md ({stats['public_repos']} repos, {stats['stars']} stars)")

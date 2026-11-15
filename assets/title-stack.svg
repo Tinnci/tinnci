@@ -1,9 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="52" viewBox="0 0 840 52" role="img" aria-label="02 TECH STACK">
-  <rect x="8" y="8" width="826" height="40" fill="#000000" />
-  <rect x="2" y="2" width="826" height="40" fill="#FAFAFA" stroke="#000000" stroke-width="3" />
-  <rect x="2" y="2" width="64" height="40" fill="#FFD93D" stroke="#000000" stroke-width="3" />
-  <text x="34" y="28" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="16" fill="#111111">02</text>
-  <text x="82" y="28" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="16" fill="#111111" letter-spacing="1.2">TECH STACK</text>
-  <rect x="698" y="9" width="116" height="26" fill="#111111" />
-  <text x="756" y="26" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="800" font-size="11" fill="#FFD93D" letter-spacing="0.8">10 TOOLS</text>
+  <rect x="10" y="10" width="824" height="38" fill="#000000" />
+  <g>
+    <rect x="4" y="4" width="824" height="38" fill="#FAFAFA" stroke="#000000" stroke-width="3" />
+    <rect x="4" y="4" width="64" height="38" fill="#FFD93D" stroke="#000000" stroke-width="3" />
+    <text x="36" y="29" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="16" fill="#111111">02</text>
+    <text x="84" y="29" font-family="'Segoe UI', system-ui, sans-serif" font-weight="900" font-size="16" fill="#111111" letter-spacing="1.2">TECH STACK</text>
+    <rect x="698" y="10" width="118" height="26" fill="#111111" />
+    <rect x="707" y="20" width="6" height="6" fill="#FFD93D">
+      <animate attributeName="opacity" values="1;0.25;1" dur="2.2s" begin="0.5s" repeatCount="indefinite" />
+    </rect>
+    <text x="763" y="27" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="800" font-size="11" fill="#FFD93D" letter-spacing="0.8">10 TOOLS</text>
+    <animateTransform attributeName="transform" type="translate" values="0 0;-1.5 -1.5;0 0;0 0" keyTimes="0;0.05;0.10;1" dur="8s" begin="1.2s" repeatCount="indefinite" />
+  </g>
 </svg>
