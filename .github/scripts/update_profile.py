@@ -102,6 +102,46 @@ def wrap_lines(text: str, max_chars: int = 44, max_lines: int = 2):
     return lines
 
 
+def render_header_svg():
+    marquee_text = "RUST // TYPESCRIPT // GO // PYTHON // KOTLIN // FLUTTER // WIN32 // SHANGHAI // "
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="840" height="152" viewBox="0 0 840 152" role="img" aria-label="Hi, I'm Tinnci">
+  <defs>
+    <clipPath id="marqueeClip">
+      <rect x="4" y="106" width="822" height="34" />
+    </clipPath>
+  </defs>
+
+  <!-- Hard shadow + Main Hero Bento -->
+  <rect x="12" y="12" width="822" height="136" fill="#000000" />
+  <rect x="4" y="4" width="822" height="136" fill="#FFD93D" stroke="#000000" stroke-width="4" />
+
+  <!-- Top-right corner accent tag -->
+  <rect x="650" y="16" width="160" height="28" fill="#FF6B6B" stroke="#000000" stroke-width="3" />
+  <circle cx="668" cy="30" r="5" fill="#111111">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite" />
+  </circle>
+  <text x="738" y="34" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="11" fill="#111111" letter-spacing="1">ONLINE // DEV</text>
+
+  <!-- Main Headline -->
+  <text x="28" y="76" font-family="'Segoe UI', system-ui, -apple-system, sans-serif" font-weight="900" font-size="52" fill="#111111" letter-spacing="-1.5">HI, I'M TINNCI</text>
+  <rect x="406" y="34" width="22" height="44" fill="#111111">
+    <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Bottom Marquee Strip (inspired by tinnci.github.io WindMarquee) -->
+  <rect x="4" y="106" width="822" height="34" fill="#111111" stroke="#000000" stroke-width="3" />
+  <g clip-path="url(#marqueeClip)">
+    <g>
+      <text x="16" y="128" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#FFD93D" letter-spacing="1.2">{escape(marquee_text * 3)}</text>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-620 0" dur="14s" repeatCount="indefinite" />
+    </g>
+  </g>
+</svg>
+"""
+    with open(os.path.join(OUT_DIR, "header.svg"), "w", encoding="utf-8", newline="\n") as f:
+        f.write(svg)
+
+
 def render_activity_svg(stats):
     top_langs = stats["top_langs"]
     max_cnt = max((c for _, c in top_langs), default=1)
@@ -116,7 +156,9 @@ def render_activity_svg(stats):
         lang_rows.append(
             f'  <text x="440" y="{y_text}" class="lang">{escape(lang.upper()[:9])}</text>\n'
             f'  <rect x="520" y="{y_rect}" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />\n'
-            f'  <rect x="520" y="{y_rect}" width="{w}" height="18" fill="{color}" stroke="#000000" stroke-width="2" />\n'
+            f'  <rect x="520" y="{y_rect}" width="0" height="18" fill="{color}" stroke="#000000" stroke-width="2">\n'
+            f'    <animate attributeName="width" from="0" to="{w}" dur="0.8s" begin="{idx * 0.1:.1f}s" fill="freeze" />\n'
+            f'  </rect>\n'
             f'  <text x="766" y="{y_text}" class="cnt">{cnt}</text>'
         )
 
@@ -159,6 +201,9 @@ def render_activity_svg(stats):
   <rect x="422" y="4" width="402" height="248" fill="#FAFAFA" stroke="#000000" stroke-width="3" />
   <rect x="422" y="4" width="402" height="38" fill="#111111" stroke="#000000" stroke-width="3" />
   <text x="438" y="28" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#FFD93D" letter-spacing="1">TOP LANGUAGES // OWN REPOS</text>
+  <circle cx="802" cy="23" r="5" fill="#6BCB77">
+    <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite" />
+  </circle>
 {chr(10).join(lang_rows)}
 </svg>
 """
@@ -293,6 +338,7 @@ def render_readme(project_cards, titles):
 
 def main():
     stats = fetch_github_stats()
+    render_header_svg()
     render_activity_svg(stats)
     render_stack_svg()
     titles = {

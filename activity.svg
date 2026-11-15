@@ -37,24 +37,37 @@
   <rect x="422" y="4" width="402" height="248" fill="#FAFAFA" stroke="#000000" stroke-width="3" />
   <rect x="422" y="4" width="402" height="38" fill="#111111" stroke="#000000" stroke-width="3" />
   <text x="438" y="28" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="13" fill="#FFD93D" letter-spacing="1">TOP LANGUAGES // OWN REPOS</text>
+  <circle cx="802" cy="23" r="5" fill="#6BCB77">
+    <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite" />
+  </circle>
   <text x="440" y="72" class="lang">PYTHON</text>
   <rect x="520" y="58" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
-  <rect x="520" y="58" width="230" height="18" fill="#FFD93D" stroke="#000000" stroke-width="2" />
+  <rect x="520" y="58" width="0" height="18" fill="#FFD93D" stroke="#000000" stroke-width="2">
+    <animate attributeName="width" from="0" to="230" dur="0.8s" begin="0.0s" fill="freeze" />
+  </rect>
   <text x="766" y="72" class="cnt">22</text>
   <text x="440" y="110" class="lang">RUST</text>
   <rect x="520" y="96" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
-  <rect x="520" y="96" width="125" height="18" fill="#FF6B6B" stroke="#000000" stroke-width="2" />
+  <rect x="520" y="96" width="0" height="18" fill="#FF6B6B" stroke="#000000" stroke-width="2">
+    <animate attributeName="width" from="0" to="125" dur="0.8s" begin="0.1s" fill="freeze" />
+  </rect>
   <text x="766" y="110" class="cnt">12</text>
   <text x="440" y="148" class="lang">TYPESCRIP</text>
   <rect x="520" y="134" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
-  <rect x="520" y="134" width="62" height="18" fill="#4D96FF" stroke="#000000" stroke-width="2" />
+  <rect x="520" y="134" width="0" height="18" fill="#4D96FF" stroke="#000000" stroke-width="2">
+    <animate attributeName="width" from="0" to="62" dur="0.8s" begin="0.2s" fill="freeze" />
+  </rect>
   <text x="766" y="148" class="cnt">6</text>
   <text x="440" y="186" class="lang">SHELL</text>
   <rect x="520" y="172" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
-  <rect x="520" y="172" width="62" height="18" fill="#6BCB77" stroke="#000000" stroke-width="2" />
+  <rect x="520" y="172" width="0" height="18" fill="#6BCB77" stroke="#000000" stroke-width="2">
+    <animate attributeName="width" from="0" to="62" dur="0.8s" begin="0.3s" fill="freeze" />
+  </rect>
   <text x="766" y="186" class="cnt">6</text>
   <text x="440" y="224" class="lang">DART</text>
   <rect x="520" y="210" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
-  <rect x="520" y="210" width="62" height="18" fill="#111111" stroke="#000000" stroke-width="2" />
+  <rect x="520" y="210" width="0" height="18" fill="#111111" stroke="#000000" stroke-width="2">
+    <animate attributeName="width" from="0" to="62" dur="0.8s" begin="0.4s" fill="freeze" />
+  </rect>
   <text x="766" y="224" class="cnt">6</text>
 </svg>

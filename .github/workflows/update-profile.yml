@@ -27,7 +27,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add activity.svg assets/ README.md
+          git add header.svg activity.svg assets/ README.md
           if ! git diff --cached --quiet; then
             git commit -m "chore: update automated Neo-brutalist profile cards"
             git push
