@@ -15,9 +15,9 @@
     <rect x="174" y="14" width="8" height="8" fill="#111111">
       <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="0s" repeatCount="indefinite" />
     </rect>
-    <text x="20" y="48" class="num">226</text>
+    <text x="20" y="48" class="num">227</text>
     <text x="20" y="74" class="lbl">PUBLIC REPOS</text>
-    <text x="20" y="96" class="sub">91 ORIGINAL // 135 FORKS</text>
+    <text x="20" y="96" class="sub">91 ORIGINAL // 136 FORKS</text>
     <animateTransform attributeName="transform" type="translate" values="0 0;-1.5 -1.5;0 0;0 0" keyTimes="0;0.08;0.16;1" dur="6s" begin="0s" repeatCount="indefinite" />
   </g>
 
