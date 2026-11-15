@@ -14,10 +14,10 @@ PALETTE = ["#FFD93D", "#FF6B6B", "#6BCB77", "#4D96FF"]
 
 FEATURED_REPOS = [
     ("PecoFence", "RUST", "#FF6B6B", "Open-source Stardock Fences alternative for Win 11 — glass fences, live folders, tabs, Peek."),
-    ("maon", "TYPESCRIPT", "#4D96FF", "Windows workspace for SPM models, changes, and builds."),
+    ("ha-tcl-udp-ac", "PYTHON", "#FFD93D", "Home Assistant integration for TCL air conditioners with local UDP & TCL+ cloud fallback."),
     ("anshin", "KOTLIN", "#FFD93D", "Medicine reminder Android app — Jetpack Compose, Material 3, MVVM, Hilt, Room."),
     ("meegle-cli", "GO", "#6BCB77", "Terminal-first CLI for Meegle (Lark Project) work items, schedules, and data."),
-    ("people-cli", "PYTHON", "#FFD93D", "Local-first people hub with source-aware identities, temporal facts, and tagging."),
+    ("zectrix-note4-platform", "C++", "#4D96FF", "Open firmware platform for the black-and-white Zectrix Note 4 e-paper device."),
     ("tinnci.github.io", "NEO-BRUTAL LAB", "#FF6B6B", "Personal digital garden built with React, Vite, Pele diagrams & Knowledge Graph."),
 ]
 
@@ -57,6 +57,7 @@ def fetch_github_stats():
             break
         page += 1
 
+    repos = [r for r in repos if not r.get("private")]
     own = [r for r in repos if not r.get("fork")]
     stars = sum(r.get("stargazers_count", 0) for r in own)
     lang_counts = Counter(r["language"] for r in own if r.get("language"))
