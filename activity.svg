@@ -27,7 +27,7 @@
     <rect x="382" y="14" width="8" height="8" fill="#111111">
       <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="0.6s" repeatCount="indefinite" />
     </rect>
-    <text x="228" y="48" class="num">81</text>
+    <text x="228" y="48" class="num">82</text>
     <text x="228" y="74" class="lbl">TOTAL STARS</text>
     <text x="228" y="96" class="sub">OWNED REPOSITORIES</text>
     <animateTransform attributeName="transform" type="translate" values="0 0;-1.5 -1.5;0 0;0 0" keyTimes="0;0.08;0.16;1" dur="6s" begin="1.5s" repeatCount="indefinite" />
