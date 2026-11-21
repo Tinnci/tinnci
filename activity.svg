@@ -15,9 +15,9 @@
     <rect x="174" y="14" width="8" height="8" fill="#111111">
       <animate attributeName="opacity" values="1;0.25;1" dur="2.4s" begin="0s" repeatCount="indefinite" />
     </rect>
-    <text x="20" y="48" class="num">231</text>
+    <text x="20" y="48" class="num">232</text>
     <text x="20" y="74" class="lbl">PUBLIC REPOS</text>
-    <text x="20" y="96" class="sub">92 ORIGINAL // 139 FORKS</text>
+    <text x="20" y="96" class="sub">93 ORIGINAL // 139 FORKS</text>
     <animateTransform attributeName="transform" type="translate" values="0 0;-1.5 -1.5;0 0;0 0" keyTimes="0;0.08;0.16;1" dur="6s" begin="0s" repeatCount="indefinite" />
   </g>
 
@@ -76,18 +76,18 @@
     <animate attributeName="width" from="0" to="125" dur="0.8s" begin="0.1s" fill="freeze" />
   </rect>
   <text x="766" y="110" class="cnt">12</text>
-  <text x="440" y="148" class="lang">DART</text>
+  <text x="440" y="148" class="lang">TYPESCRIP</text>
   <rect x="520" y="134" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
   <rect x="520" y="134" width="0" height="18" fill="#4D96FF" stroke="#000000" stroke-width="2">
     <animate attributeName="width" from="0" to="73" dur="0.8s" begin="0.2s" fill="freeze" />
   </rect>
   <text x="766" y="148" class="cnt">7</text>
-  <text x="440" y="186" class="lang">TYPESCRIP</text>
+  <text x="440" y="186" class="lang">DART</text>
   <rect x="520" y="172" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
   <rect x="520" y="172" width="0" height="18" fill="#6BCB77" stroke="#000000" stroke-width="2">
-    <animate attributeName="width" from="0" to="62" dur="0.8s" begin="0.3s" fill="freeze" />
+    <animate attributeName="width" from="0" to="73" dur="0.8s" begin="0.3s" fill="freeze" />
   </rect>
-  <text x="766" y="186" class="cnt">6</text>
+  <text x="766" y="186" class="cnt">7</text>
   <text x="440" y="224" class="lang">SHELL</text>
   <rect x="520" y="210" width="230" height="18" fill="#E5E5E5" stroke="#000000" stroke-width="2" />
   <rect x="520" y="210" width="0" height="18" fill="#111111" stroke="#000000" stroke-width="2">
